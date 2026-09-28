@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: connect4-four-in-a-row
+    runtime: node
+    rootDir: server
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /
+    plan: free
